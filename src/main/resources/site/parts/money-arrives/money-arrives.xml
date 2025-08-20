@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part xmlns="urn:enonic:xp:model:1.0">
+    <display-name>Pengene kommer frem</display-name>
+  <form>
+        <input type="TextLine" name="heading">
+            <label>Override heading</label>
+        </input>
+         <input type="TextArea" name="description">
+            <label>Override description</label>
+        </input>
+         <input type="TextLine" name="readMoreLabel">
+            <label>Override Read More Label</label>
+        </input>
+           <input type="number" name="causeAmount">
+            <label>Override How much money goes to the cause</label>
+        </input>
+        
+    </form>
+</part>

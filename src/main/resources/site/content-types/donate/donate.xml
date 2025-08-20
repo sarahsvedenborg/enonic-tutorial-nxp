@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Støtt oss landingsside</display-name>
+  <description>Fast side som ikke endres for å få folk til å støtte arbeidet</description>
+  <super-type>base:structured</super-type>
+  <form>
+     <input type="TextArea" name="teaser">
+      <label>Teaser</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+    <input type="HtmlArea" name="bio">
+      <label>Bio</label>
+      <occurrences minimum="1" maximum="1"/>
+      <config>
+        <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
+      </config>
+    </input>
+      <input type="ContentSelector" name="info">
+      <label>Les mer om hva det vil si å være:</label>
+      <occurrences minimum="0" maximum="10"/>
+      <config>
+        <allowContentType>${app}:campaign</allowContentType>
+      </config>
+    </input>
+      <input type="ContentSelector" name="otherWays">
+      <label>Andre måter å støtte oss på:</label>
+      <occurrences minimum="0" maximum="10"/>
+      <config>
+        <allowContentType>${app}:campaign</allowContentType>
+      </config>
+    </input>
+ 
+  </form>
+</content-type>
