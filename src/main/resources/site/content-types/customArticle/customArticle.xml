@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content-type xmlns="urn:enonic:xp:model:1.0">
-  <display-name>Kampanje</display-name>
+  <display-name>Artikkel</display-name>
   <description>beskrivelse</description>
   <super-type>base:structured</super-type>
   <form>
-   <input type="ImageSelector" name="photos">
-      <label>Toppbilde</label>
-      <occurrences minimum="0" maximum="1"/>
+   <input type="TextArea" name="shortDescription">
+      <label>Ingress</label>
     </input>
     <input type="HtmlArea" name="body">
       <label>Brødtekst</label>
