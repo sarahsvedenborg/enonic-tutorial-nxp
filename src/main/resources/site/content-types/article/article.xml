@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content-type xmlns="urn:enonic:xp:model:1.0">
-  <display-name i18n="article.displayName">Article</display-name>
+  <display-name i18n="article.displayName">IKKE BRUK</display-name>
+  <description i18n="article.description">kun for sarahs testing</description>
   <display-name-label i18n="article.title">Article heading</display-name-label>
   <super-type>base:structured</super-type>
   <form>
+  <input name="body" type="HtmlArea">
+                  <label i18n="article.text">Brødtekst</label>
+                  <occurrences minimum="1" maximum="1"/>
+                  <config>
+                    <exclude>Code | Blockquote | Table | Anchor</exclude>
+                    <allowHeadings>h2 h3</allowHeadings>
+                  </config>
+                </input>
     <field-set>
       <label>Teaser</label>
       <items>

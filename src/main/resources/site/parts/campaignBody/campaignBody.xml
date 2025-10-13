@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part xmlns="urn:enonic:xp:model:1.0">
+    <display-name>Campaign Body</display-name>
+    <description>Demo body</description>
+  <!--   <form>
+        <input type="TextLine" name="heading">
+            <label>Override body</label>
+        </input>
+    </form> -->
+</part>

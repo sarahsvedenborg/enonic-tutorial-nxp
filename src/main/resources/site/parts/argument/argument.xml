@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part xmlns="urn:enonic:xp:model:1.0">
+    <display-name>Argument</display-name>
+    <description>Argument section with title, text, link and image</description>
+    <form>
+        <input type="TextLine" name="title">
+            <label>Title</label>
+            <help-text>Main heading for the argument section</help-text>
+        </input>
+        
+        <input type="TextArea" name="text">
+            <label>Text</label>
+            <help-text>Descriptive text content</help-text>
+        </input>
+        
+        <input type="TextLine" name="linkText">
+            <label>Link Text</label>
+            <help-text>Text to display for the link (e.g., "Les mer")</help-text>
+        </input>
+        
+        <input type="TextLine" name="linkUrl">
+            <label>Link URL</label>
+            <help-text>URL for the link</help-text>
+        </input>
+        
+        <input type="ImageSelector" name="image">
+            <label>Image</label>
+            <help-text>Image to display alongside the content</help-text>
+        </input>
+        
+        <input type="TextLine" name="imageAlt">
+            <label>Image Alt Text</label>
+            <help-text>Alternative text for the image</help-text>
+        </input>
+    </form>
+</part>
+
+

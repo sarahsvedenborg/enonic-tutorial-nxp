@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Aktivitet</display-name>
+  <description>Brukes for globale aktivitetesbeskrivelser</description>
+  <super-type>base:structured</super-type>
+  <form>
+   <input type="ImageSelector" name="photo">
+      <label>Toppbilde</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+    <input name="activityType" type="ComboBox">
+  <label>Aktivitetestype</label>
+  <occurrences minimum="1" maximum="1"/>
+  <config>
+    <option value="Vitnestøtte">Vitnestøtte</option>  
+    <option value="Besøkstjeneste">Besøkstjeneste</option>
+    <option value="Møteplasser">Møteplasser</option>
+    <option value="Adminsistrative oppgaver">Adminsistrative oppgaver</option>
+    <option value="Språkgruppe">Språkgruppe</option>
+    <option value="Leksehjelp">Leksehjelp</option>
+    <option value="Hjelpekorps">Hjelpekorps</option>
+    <option value="Besøksvenn med hund">Besøksvenn med hund</option>
+    <option value="Øvrige aktiviteter - røde kors ungdom">Øvrige aktiviteter - røde kors ungdom</option>
+    <option value="Flyktningguide">Flyktningguide</option>
+    <option value="Våketjeneste">Våketjeneste</option>
+  </config>
+</input>
+   <input type="TextArea" name="shortDescription">
+      <label>Ingress</label>
+    </input>
+    <input type="HtmlArea" name="body">
+      <label>Brødtekst</label>
+      <occurrences minimum="1" maximum="1"/>
+      <config>
+        <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
+      </config>
+    </input>
+ 
+  </form>
+</content-type>
