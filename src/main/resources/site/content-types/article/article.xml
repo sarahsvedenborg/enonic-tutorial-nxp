@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content-type xmlns="urn:enonic:xp:model:1.0">
-  <display-name i18n="article.displayName">Article</display-name>
+  <display-name i18n="article.displayName">IKKE BRUK</display-name>
+  <description i18n="article.description">kun for sarahs testing</description>
   <display-name-label i18n="article.title">Article heading</display-name-label>
   <super-type>base:structured</super-type>
   <form>
