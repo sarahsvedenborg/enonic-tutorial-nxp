@@ -2,7 +2,7 @@
 <part xmlns="urn:enonic:xp:model:1.0">
     <display-name>Giverskjema</display-name>
   <form>
-        <input type="TextLine" name="heading">
+      <!--   <input type="TextLine" name="heading">
             <label>Override heading</label>
         </input>
          <input type="TextArea" name="description">
@@ -25,7 +25,14 @@
         </input>
            <input type="textLine" name="accountNumber">
             <label>Override accountNumber</label>
-        </input>
+        </input> -->
+          <input type="ContentSelector" name="donationFormReference">
+      <label>Velg skjema:</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+        <allowContentType>${app}:donationForm</allowContentType>
+      </config>
+    </input>
       
     </form>
 </part>

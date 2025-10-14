@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Giverskjema</display-name>
+  <description>Brukes for å gi en giver et skjema for å gi en donasjon</description>
+  <super-type>base:structured</super-type>
+  <form>
+<input name="formType" type="RadioButton">
+  <label>Kompakt eller stort skjema</label>
+  <occurrences minimum="1" maximum="1"/>  
+  <config>
+    <option value="compact" i18n="option_one.label">Kompakt</option>  
+    <option value="expanded" i18n="option_two.label">Utfyllende informasjon</option>
+  </config> 
+</input>
+ <input type="TextArea" name="description">
+      <label>Beskrivelse</label>
+    </input>
+   <input name="amount1" type="TextLine">
+  <label>Beløp 1</label>
+</input>
+   <input name="amount2" type="TextLine">
+  <label>Beløp 2</label>
+</input>
+   <input name="amount3" type="TextLine">
+  <label>Beløp 3</label>
+</input>
+
+   <input type="TextArea" name="fact">
+      <label>Fakta</label>
+    </input>
+ 
+  </form>
+</content-type>
