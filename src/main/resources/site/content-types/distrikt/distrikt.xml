@@ -1,0 +1,21 @@
+<content-type>
+  <display-name>Distrikt</display-name>
+  <super-type>base:structured</super-type>
+  <description>A regional district from the organization structure.</description>
+
+  <form>
+    <input name="sourceId" type="TextLine">
+      <label>Source ID</label>
+      <occurrences minimum="1" maximum="1"/>
+      <help-text>The unique ID from the original source system.</help-text>
+    </input>
+    <input name="county" type="TextLine">
+      <label>County</label>
+      <occurrences minimum="1" maximum="1"/>
+      <help-text>The name of the county the district belongs to.</help-text>
+    </input>
+  </form>
+
+  <allow-child-content-type>lokalforening</allow-child-content-type>
+
+</content-type>
