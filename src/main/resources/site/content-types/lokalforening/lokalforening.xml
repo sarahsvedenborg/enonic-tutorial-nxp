@@ -9,7 +9,7 @@
       <occurrences minimum="1" maximum="1"/>
       <help-text>The unique ID from the original source system.</help-text>
     </input>
-    <item-set name="api_activities">  
+      <item-set name="api_activities">  
   <label>Aktiviteter fra API</label>  
   <occurrences minimum="0" maximum="0"/>  
   <items>
@@ -21,7 +21,7 @@
       <label>Local activity name</label>
       <occurrences minimum="0" maximum="1"/>
     </input>
-     <input name="local_activity_name" type="TextArea">
+      <input name="moreContent" type="TextArea">
       <label>Berikende tekst for den lokale aktiviteten</label>
       <occurrences minimum="0" maximum="1"/>
     </input>
