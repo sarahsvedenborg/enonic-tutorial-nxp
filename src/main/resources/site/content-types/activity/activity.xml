@@ -35,6 +35,23 @@
         <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
       </config>
     </input>
- 
+<!--  <item-set name="signupForm">  
+  <label>Påmeldingsskjema</label>  
+  <occurrences minimum="0" maximum="1"/>  
+  <items>
+    <input name="title" type="TextLine">
+      <label>Overskrift</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+    <input name="intro" type="TextLine">
+      <label>Sjemaintro</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+      <input name="information" type="TextArea">
+      <label>Liten tekst over påmeldingsknapp</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+  </items>
+</item-set> -->
   </form>
 </content-type>

@@ -20,6 +20,8 @@
       <occurrences minimum="0" maximum="10"/>
       <config>
         <allowContentType>${app}:campaign</allowContentType>
+         <allowContentType>${app}:infoArticle</allowContentType>
+        <allowContentType>${app}:newsArticle</allowContentType>
       </config>
     </input>
       <input type="ContentSelector" name="otherWays">
@@ -27,6 +29,8 @@
       <occurrences minimum="0" maximum="10"/>
       <config>
         <allowContentType>${app}:campaign</allowContentType>
+        <allowContentType>${app}:infoArticle</allowContentType>
+        <allowContentType>${app}:newsArticle</allowContentType>
       </config>
     </input>
  
