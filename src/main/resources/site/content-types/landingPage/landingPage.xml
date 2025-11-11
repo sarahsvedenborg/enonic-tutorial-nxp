@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Landingsside</display-name>
+  <description>Tom side</description>
+  <super-type>base:structured</super-type>
+  <form>
+  </form>
+</content-type>

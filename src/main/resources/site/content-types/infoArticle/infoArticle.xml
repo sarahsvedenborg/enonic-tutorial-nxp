@@ -14,6 +14,12 @@
         <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
       </config>
     </input>
- 
+     <input type="ContentSelector" name="arguments">
+      <label>Argumenter (gode grunner)</label>
+      <occurrences minimum="0" maximum="0"/>
+      <config>
+        <allowContentType>${app}:argument</allowContentType>
+      </config>
+    </input>
   </form>
 </content-type>

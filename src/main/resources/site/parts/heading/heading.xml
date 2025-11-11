@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <part xmlns="urn:enonic:xp:model:1.0">
     <display-name>Hero</display-name>
-    <description>Bilde og tesktfelt på landingsside</description>
+    <description>Tittel på landingsside</description>
     <form>
         <input type="TextLine" name="heading">
             <label>Override heading</label>
@@ -12,8 +12,8 @@
        <!--  <input type="TextLine" name="buttonText">
             <label>Tekst på knapp</label>
         </input> -->
-          <input type="ImageSelector" name="image">
+           <input type="ImageSelector" name="image">
             <label>Bilde</label>
-        </input>
+        </input> 
     </form>
 </part>

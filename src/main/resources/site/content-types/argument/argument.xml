@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Argument/god grunn</display-name>
+ <description>Gjenbrukbare argumenter, eks: "Pengene kommer frem"</description>
+  <super-type>base:structured</super-type>
+  <form>
+ <input type="TextLine" name="title">
+            <label>Title</label>
+            <help-text>Main heading for the argument section</help-text>
+        </input>
+        
+        <input type="TextArea" name="text">
+            <label>Text</label>
+            <help-text>Descriptive text content</help-text>
+        </input>
+          <input type="TextLine" name="linkText">
+            <label>Link Text</label>
+            <help-text>Text to display for the link (e.g., "Les mer")</help-text>
+        </input>
+        
+      <input type="ContentSelector" name="readMoreLink">
+      <label>Les mer lenke:</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+         <allowContentType>${app}:infoArticle</allowContentType>
+        <allowContentType>${app}:newsArticle</allowContentType>
+      </config>
+    </input>
+        
+        <input type="ImageSelector" name="image">
+            <label>Image</label>
+            <help-text>Image to display alongside the content</help-text>
+        </input>
+ 
+  </form>
+</content-type>

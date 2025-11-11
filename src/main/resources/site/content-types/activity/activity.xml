@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content-type xmlns="urn:enonic:xp:model:1.0">
-  <display-name>Aktivitet</display-name>
+  <display-name>Global aktivitetsbeskrivelse</display-name>
   <description>Brukes for globale aktivitetesbeskrivelser</description>
   <super-type>base:structured</super-type>
   <form>
@@ -35,6 +35,23 @@
         <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
       </config>
     </input>
- 
+<item-set name="signupForm">  
+  <label>Påmeldingsskjema</label>  
+  <occurrences minimum="0" maximum="1"/>  
+  <items>
+    <input name="title" type="TextLine">
+      <label>Overskrift</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+    <input name="intro" type="TextLine">
+      <label>Skjemaintro</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+      <input name="information" type="TextArea">
+      <label>Liten tekst over påmeldingsknapp</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+  </items>
+</item-set> 
   </form>
 </content-type>

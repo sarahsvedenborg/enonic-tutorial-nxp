@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Lokal aktivitet</display-name>
+  <description>Brukes for lokale aktiviteter</description>
+  <super-type>base:structured</super-type>
+  <form>
+   <input type="ImageSelector" name="photo">
+      <label>Toppbilde</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+     <input name="global_activity_name" type="TextLine">
+      <label>Global activity name</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+    <input name="local_activity_name" type="TextLine">
+      <label>Local activity name</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+   
+    <input type="HtmlArea" name="body">
+      <label>Berikende tekst</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+        <exclude>NumberedList Outdent Indent SpecialChar Anchor Table PasteModeSwitcher</exclude>
+      </config>
+    </input>
+ 
+  </form>
+</content-type>

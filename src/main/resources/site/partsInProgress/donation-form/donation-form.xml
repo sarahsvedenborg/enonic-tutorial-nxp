@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+    <display-name>Giverskjema</display-name>
+  <form>
+        <input type="TextLine" name="heading">
+            <label>Overskrift</label>
+        </input>
+         <input type="TextArea" name="description">
+            <label>Introduksjon</label>
+        </input>
+         <input type="number" name="amount1">
+            <label>Beløp 1</label>
+        </input>
+         <input type="number" name="amount2">
+            <label>Beløp 2</label>
+        </input>
+         <input type="number" name="amount3">
+            <label>Beløp 3</label>
+        </input>
+         <input type="textArea" name="factBox">
+            <label>Fakta</label>
+    </form>
+</content-type>
