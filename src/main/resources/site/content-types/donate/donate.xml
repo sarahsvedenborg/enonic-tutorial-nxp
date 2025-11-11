@@ -8,7 +8,14 @@
       <label>Toppbilde</label>
       <occurrences minimum="0" maximum="1"/>
     </input>
-    <input type="HtmlArea" name="bio">
+     <input type="ContentSelector" name="donationForm">
+      <label>Giverskjema</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+        <allowContentType>${app}:giverskjema</allowContentType>
+      </config>
+    </input>
+     <input type="HtmlArea" name="bio">
       <label>Brødtekst</label>
       <occurrences minimum="1" maximum="1"/>
       <config>
@@ -31,6 +38,13 @@
         <allowContentType>${app}:campaign</allowContentType>
         <allowContentType>${app}:infoArticle</allowContentType>
         <allowContentType>${app}:newsArticle</allowContentType>
+      </config>
+    </input>
+     <input type="ContentSelector" name="arguments">
+      <label>Argumenter (gode grunner)</label>
+      <occurrences minimum="0" maximum="0"/>
+      <config>
+        <allowContentType>${app}:argument</allowContentType>
       </config>
     </input>
  

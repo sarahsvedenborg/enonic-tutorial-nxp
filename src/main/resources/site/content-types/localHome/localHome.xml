@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content-type xmlns="urn:enonic:xp:model:1.0">
-  <display-name>Lokallag</display-name>
+  <display-name>Lokallag - IKKE BRUK</display-name>
  <description>Lokallag hentes fra API</description>
   <super-type>base:structured</super-type>
   <form>
